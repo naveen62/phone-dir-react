@@ -14,7 +14,6 @@ class Contacts extends React.Component {
             <div>
                 <PageTilte title='Contacts' />
                 <div className='contact-container'>
-                    <input className='contact-search' type="text" placeholder='Search Contacts'/>
                     <ContactLists contacts={this.props.contacts} />
                 </div>
             </div>
