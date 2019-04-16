@@ -14,7 +14,11 @@ class Contacts extends React.Component {
             <div>
                 <PageTilte title='Contacts' />
                 <div className='contact-container'>
-                    <ContactLists contacts={this.props.contacts} />
+                    {this.props.contacts.length === 0 ? (
+                        <h1>No Contacts</h1>
+                    ) : (
+                        <ContactLists contacts={this.props.contacts} />
+                    ) }
                 </div>
             </div>
         )

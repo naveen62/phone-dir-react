@@ -4,6 +4,8 @@ import {connect} from 'react-redux'
 import PageTitle from '../components/PageTitle';
 import {RemoveContact} from '../actions/contacts'
 
+import '../styles/contact.css';
+
 class Contact extends React.Component {
 
     handleDelete = () => {
@@ -28,8 +30,8 @@ class Contact extends React.Component {
                         <h1>Email</h1>
                         <h3>{this.props.contact.email}</h3>
                     </div>
-                    <button onClick={this.handleEdit} type='button'>Edit</button>
-                    <button onClick={this.handleDelete} type='button'>Delete</button>
+                    <button className='conatacts-btn1' onClick={this.handleEdit} type='button'>Edit</button>
+                    <button className='conatcts-btn2' onClick={this.handleDelete} type='button'>Delete</button>
                 </div>
             </div>
         )

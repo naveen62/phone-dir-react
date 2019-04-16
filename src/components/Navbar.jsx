@@ -3,9 +3,9 @@ import {NavLink} from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const Navbar = props => (
-    <div className='container   '>
+    <div className='container'>
         <header className='heading'>
-            MyPhone-Book
+           <NavLink to='/'>MyPhone-book</NavLink>
         </header>
         <nav className='main-nav'>
             <ul className='main-nav_items'>
